@@ -19,13 +19,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xSo-WQ-MzL">
-                                <rect key="frame" x="164" y="318" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="157.5" y="318" width="59" height="30"/>
+                                <state key="normal" title="Let's Eat"/>
+                                <connections>
+                                    <segue destination="nDB-mQ-Czi" kind="show" id="9Jm-LT-EdC"/>
+                                </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="QuickEats_Welcome_Logo" highlightedImage="QuickEats_Welcome_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="zfu-GU-A33">
+                                <rect key="frame" x="37" y="50" width="300" height="73"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="fMw-ZS-4aL"/>
+                                    <constraint firstAttribute="width" constant="300" id="wFl-nk-fPu"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="zfu-GU-A33" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="1ot-oa-6W7"/>
                             <constraint firstItem="xSo-WQ-MzL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="COm-fh-EpQ"/>
+                            <constraint firstItem="zfu-GU-A33" firstAttribute="centerX" secondItem="xSo-WQ-MzL" secondAttribute="centerX" id="DoC-f3-mN9"/>
                             <constraint firstItem="xSo-WQ-MzL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="KqP-iH-kiy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -33,22 +45,32 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="252" y="133.5832083958021"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="CkH-L8-m16">
             <objects>
-                <tableViewController id="Dod-Kr-CNc" sceneMemberID="viewController">
+                <tableViewController id="Dod-Kr-CNc" customClass="IngredientsTableViewController" customModule="QuickEats" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="nmG-gh-xMc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="RIR-Bg-2j6">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="ingredients" textLabel="5Xo-7L-hyo" style="IBUITableViewCellStyleDefault" id="RIR-Bg-2j6">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RIR-Bg-2j6" id="OZ8-ng-X5f">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="335" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5Xo-7L-hyo">
+                                            <rect key="frame" x="16" y="0.0" width="319" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -61,7 +83,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AU6-KD-qUq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1953" y="134"/>
+            <point key="canvasLocation" x="1863" y="134"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ydi-C4-r0g">
@@ -80,4 +102,7 @@
             <point key="canvasLocation" x="1001" y="134"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="QuickEats_Welcome_Logo" width="397" height="95"/>
+    </resources>
 </document>

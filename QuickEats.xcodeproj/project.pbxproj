@@ -14,6 +14,8 @@
 		41157AF020A3D12F0022F7B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41157AEE20A3D12F0022F7B3 /* LaunchScreen.storyboard */; };
 		41157AFB20A3D12F0022F7B3 /* QuickEatsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41157AFA20A3D12F0022F7B3 /* QuickEatsTests.swift */; };
 		41157B0620A3D12F0022F7B3 /* QuickEatsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41157B0520A3D12F0022F7B3 /* QuickEatsUITests.swift */; };
+		41395D6D20A9398B00C7B6F7 /* IngredientsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41395D6C20A9398B00C7B6F7 /* IngredientsTableViewController.swift */; };
+		41395D6F20A93B8800C7B6F7 /* Ingredients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41395D6E20A93B8800C7B6F7 /* Ingredients.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		41157B0120A3D12F0022F7B3 /* QuickEatsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickEatsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		41157B0520A3D12F0022F7B3 /* QuickEatsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickEatsUITests.swift; sourceTree = "<group>"; };
 		41157B0720A3D12F0022F7B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41395D6C20A9398B00C7B6F7 /* IngredientsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsTableViewController.swift; sourceTree = "<group>"; };
+		41395D6E20A93B8800C7B6F7 /* Ingredients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredients.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 				41157AE520A3D12E0022F7B3 /* AppDelegate.swift */,
 				41157AE720A3D12E0022F7B3 /* ViewController.swift */,
 				41157AE920A3D12E0022F7B3 /* Main.storyboard */,
+				41395D6C20A9398B00C7B6F7 /* IngredientsTableViewController.swift */,
+				41395D6E20A93B8800C7B6F7 /* Ingredients.swift */,
 				41157AEC20A3D12F0022F7B3 /* Assets.xcassets */,
 				41157AEE20A3D12F0022F7B3 /* LaunchScreen.storyboard */,
 				41157AF120A3D12F0022F7B3 /* Info.plist */,
@@ -256,7 +262,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41395D6F20A93B8800C7B6F7 /* Ingredients.swift in Sources */,
 				41157AE820A3D12E0022F7B3 /* ViewController.swift in Sources */,
+				41395D6D20A9398B00C7B6F7 /* IngredientsTableViewController.swift in Sources */,
 				41157AE620A3D12E0022F7B3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
