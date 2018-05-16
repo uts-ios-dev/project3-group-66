@@ -10,8 +10,17 @@ import UIKit
 
 class IngredientsTableViewController: UITableViewController {
 
-    var ingredients = ["Milk", "Bread"]
+    @IBOutlet weak var ingredientCell: UITableViewCell!
     
+    var ingredients : [Ingredients] = [
+        Ingredients(ingredient: "Milk", selected: true),
+        Ingredients(ingredient: "Bread", selected: true),
+        Ingredients(ingredient: "Eggs", selected: false),
+        Ingredients(ingredient: "Bacon", selected: true),
+        Ingredients(ingredient: "Butter", selected: false),
+        Ingredients(ingredient: "Jam", selected: true),
+        Ingredients(ingredient: "Avocado", selected: true)]
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,6 +29,7 @@ class IngredientsTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        self.navigationItem.title = "Please select ingredients"
     }
 
     override func didReceiveMemoryWarning() {
@@ -41,12 +51,21 @@ class IngredientsTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ingredients", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ingredientsCell", for: indexPath)
 
          //Configure the cell...
         let ing = ingredients[indexPath.row]
-        cell.textLabel?.text = ing
+        cell.textLabel?.text = ing.ingredient
+        cell.accessoryType = .checkmark
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at: indexPath)
+        if cell == ingredientCell {
+            ingredientCell.accessoryType = (ingredientCell.accessoryType == .checkmark ? .none : .checkmark)
+        }
+        
     }
  
 

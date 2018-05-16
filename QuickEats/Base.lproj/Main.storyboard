@@ -55,9 +55,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" barStyle="black" searchBarStyle="minimal" placeholder="Search Ingredients Here" id="30b-4C-Km5">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <scopeButtonTitles>
+                                <string>Title</string>
+                                <string>Title</string>
+                            </scopeButtonTitles>
+                        </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="ingredients" textLabel="5Xo-7L-hyo" style="IBUITableViewCellStyleDefault" id="RIR-Bg-2j6">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="ingredientsCell" textLabel="5Xo-7L-hyo" style="IBUITableViewCellStyleDefault" id="RIR-Bg-2j6">
+                                <rect key="frame" x="0.0" y="84" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RIR-Bg-2j6" id="OZ8-ng-X5f">
                                     <rect key="frame" x="0.0" y="0.0" width="335" height="43.5"/>
@@ -80,8 +89,19 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="WQJ-jl-0X0"/>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="711-on-xDw" id="ekh-7y-yus"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AU6-KD-qUq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="711-on-xDw">
+                    <connections>
+                        <outlet property="delegate" destination="Dod-Kr-CNc" id="2BD-7H-ieR"/>
+                        <outlet property="searchContentsController" destination="Dod-Kr-CNc" id="Ake-GV-Mnb"/>
+                        <outlet property="searchResultsDataSource" destination="Dod-Kr-CNc" id="vVQ-un-myv"/>
+                        <outlet property="searchResultsDelegate" destination="Dod-Kr-CNc" id="7xm-Ev-aIX"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="1863" y="134"/>
         </scene>
