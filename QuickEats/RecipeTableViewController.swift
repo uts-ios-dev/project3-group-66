@@ -1,28 +1,14 @@
 //
-//  IngredientsTableViewController.swift
+//  RecipeTableViewController.swift
 //  QuickEats
 //
-//  Created by Aakash Mehta on 14/5/18.
+//  Created by Aakash Mehta on 31/5/18.
 //  Copyright © 2018 Aakash Mehta. All rights reserved.
 //
 
 import UIKit
 
-class IngredientsTableViewController: UITableViewController {
-
-    @IBOutlet weak var ingredientCell: UITableViewCell!
-    
-    var ingredients : [Ingredients] = [
-        Ingredients(ingredient: "Milk", selected: true),
-        Ingredients(ingredient: "Bread", selected: true),
-        Ingredients(ingredient: "Eggs", selected: true),
-        Ingredients(ingredient: "Bacon", selected: true),
-        Ingredients(ingredient: "Butter", selected: true),
-        Ingredients(ingredient: "Jam", selected: true),
-        Ingredients(ingredient: "Avocado", selected: true)]
-    
-    var selectedIngredients = [Ingredients] ()
-    var selectedIngredient: Ingredients?
+class RecipeTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,9 +18,6 @@ class IngredientsTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
-        self.navigationItem.title = "Please select ingredients"
-        
-
     }
 
     override func didReceiveMemoryWarning() {
@@ -46,36 +29,23 @@ class IngredientsTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 0
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return ingredients.count
+        return 0
     }
 
-    
+    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ingredientsCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
-         //Configure the cell...
-        let ing = ingredients[indexPath.row]
-        cell.textLabel?.text = ing.ingredient
+        // Configure the cell...
+
         return cell
     }
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if(tableView.cellForRow(at: indexPath)?.accessoryType == .checkmark){
-            tableView.cellForRow(at: indexPath)?.accessoryType = .none
-           //TODO remove ingredients from the list
-        }
-        else{
-            tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
-            selectedIngredient = Ingredients.init(ingredient: tableView.cellForRow(at: indexPath)?.textLabel?.text as! String, selected: true)
-            selectedIngredients.append(selectedIngredient!)
-            print(selectedIngredients.count)
-        }
-    }
+    */
 
     /*
     // Override to support conditional editing of the table view.
@@ -112,13 +82,14 @@ class IngredientsTableViewController: UITableViewController {
     }
     */
 
+    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        UserDefaults.standard.set(selectedIngredients, forKey: "selectedIngredients")
     }
+    */
 
 }
