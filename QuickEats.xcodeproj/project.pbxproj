@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,10 +14,15 @@
 		41157AF020A3D12F0022F7B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41157AEE20A3D12F0022F7B3 /* LaunchScreen.storyboard */; };
 		41157AFB20A3D12F0022F7B3 /* QuickEatsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41157AFA20A3D12F0022F7B3 /* QuickEatsTests.swift */; };
 		41157B0620A3D12F0022F7B3 /* QuickEatsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41157B0520A3D12F0022F7B3 /* QuickEatsUITests.swift */; };
-		412CFDC320BFA0AC008DB48D /* RecipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412CFDC220BFA0AC008DB48D /* RecipeTableViewController.swift */; };
-		4130EA9E20B6261500E9FCDB /* RestApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4130EA9D20B6261500E9FCDB /* RestApi.swift */; };
-		41395D6D20A9398B00C7B6F7 /* IngredientsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41395D6C20A9398B00C7B6F7 /* IngredientsTableViewController.swift */; };
+		412CFDC720BFA9F5008DB48D /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412CFDC620BFA9F5008DB48D /* Recipe.swift */; };
 		41395D6F20A93B8800C7B6F7 /* Ingredients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41395D6E20A93B8800C7B6F7 /* Ingredients.swift */; };
+		417871BB20C21B8D0072093E /* CustomRecipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417871BA20C21B8D0072093E /* CustomRecipeTableViewCell.swift */; };
+		41B630C520C2AD2E0000802E /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B630C420C2AD2E0000802E /* RecipeViewController.swift */; };
+		41B6310420C2D7560000802E /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B6310020C2D7550000802E /* Model.swift */; };
+		41B6310520C2D7560000802E /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41B6310120C2D7550000802E /* CustomCell.xib */; };
+		41B6310620C2D7560000802E /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B6310220C2D7560000802E /* CustomCell.swift */; };
+		41B6310720C2D7560000802E /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B6310320C2D7560000802E /* ViewModel.swift */; };
+		41B6310920C2D82E0000802E /* IngredientsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B6310820C2D82E0000802E /* IngredientsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,10 +56,15 @@
 		41157B0120A3D12F0022F7B3 /* QuickEatsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickEatsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		41157B0520A3D12F0022F7B3 /* QuickEatsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickEatsUITests.swift; sourceTree = "<group>"; };
 		41157B0720A3D12F0022F7B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		412CFDC220BFA0AC008DB48D /* RecipeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTableViewController.swift; sourceTree = "<group>"; };
-		4130EA9D20B6261500E9FCDB /* RestApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestApi.swift; sourceTree = "<group>"; };
-		41395D6C20A9398B00C7B6F7 /* IngredientsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsTableViewController.swift; sourceTree = "<group>"; };
+		412CFDC620BFA9F5008DB48D /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Recipe.swift; path = ../Recipe.swift; sourceTree = "<group>"; };
 		41395D6E20A93B8800C7B6F7 /* Ingredients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredients.swift; sourceTree = "<group>"; };
+		417871BA20C21B8D0072093E /* CustomRecipeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRecipeTableViewCell.swift; sourceTree = "<group>"; };
+		41B630C420C2AD2E0000802E /* RecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
+		41B6310020C2D7550000802E /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Model.swift; path = "../../../../../../Downloads/TableViewWithMultipleSelection-master/TableViewWithMultipleSelection/Model.swift"; sourceTree = "<group>"; };
+		41B6310120C2D7550000802E /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CustomCell.xib; path = "../../../../../../Downloads/TableViewWithMultipleSelection-master/TableViewWithMultipleSelection/CustomCell.xib"; sourceTree = "<group>"; };
+		41B6310220C2D7560000802E /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomCell.swift; path = "../../../../../../Downloads/TableViewWithMultipleSelection-master/TableViewWithMultipleSelection/CustomCell.swift"; sourceTree = "<group>"; };
+		41B6310320C2D7560000802E /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewModel.swift; path = "../../../../../../Downloads/TableViewWithMultipleSelection-master/TableViewWithMultipleSelection/ViewModel.swift"; sourceTree = "<group>"; };
+		41B6310820C2D82E0000802E /* IngredientsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,11 +117,16 @@
 			children = (
 				41157AE520A3D12E0022F7B3 /* AppDelegate.swift */,
 				41157AE720A3D12E0022F7B3 /* ViewController.swift */,
-				412CFDC220BFA0AC008DB48D /* RecipeTableViewController.swift */,
+				412CFDC620BFA9F5008DB48D /* Recipe.swift */,
 				41157AE920A3D12E0022F7B3 /* Main.storyboard */,
-				4130EA9D20B6261500E9FCDB /* RestApi.swift */,
-				41395D6C20A9398B00C7B6F7 /* IngredientsTableViewController.swift */,
+				41B6310820C2D82E0000802E /* IngredientsViewController.swift */,
+				41B630C420C2AD2E0000802E /* RecipeViewController.swift */,
+				417871BA20C21B8D0072093E /* CustomRecipeTableViewCell.swift */,
 				41395D6E20A93B8800C7B6F7 /* Ingredients.swift */,
+				41B6310220C2D7560000802E /* CustomCell.swift */,
+				41B6310120C2D7550000802E /* CustomCell.xib */,
+				41B6310020C2D7550000802E /* Model.swift */,
+				41B6310320C2D7560000802E /* ViewModel.swift */,
 				41157AEC20A3D12F0022F7B3 /* Assets.xcassets */,
 				41157AEE20A3D12F0022F7B3 /* LaunchScreen.storyboard */,
 				41157AF120A3D12F0022F7B3 /* Info.plist */,
@@ -205,19 +220,22 @@
 				TargetAttributes = {
 					41157AE120A3D12E0022F7B3 = {
 						CreatedOnToolsVersion = 9.3;
+						ProvisioningStyle = Automatic;
 					};
 					41157AF520A3D12F0022F7B3 = {
 						CreatedOnToolsVersion = 9.3;
+						ProvisioningStyle = Automatic;
 						TestTargetID = 41157AE120A3D12E0022F7B3;
 					};
 					41157B0020A3D12F0022F7B3 = {
 						CreatedOnToolsVersion = 9.3;
+						ProvisioningStyle = Automatic;
 						TestTargetID = 41157AE120A3D12E0022F7B3;
 					};
 				};
 			};
 			buildConfigurationList = 41157ADD20A3D12E0022F7B3 /* Build configuration list for PBXProject "QuickEats" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -243,6 +261,7 @@
 			files = (
 				41157AF020A3D12F0022F7B3 /* LaunchScreen.storyboard in Resources */,
 				41157AED20A3D12F0022F7B3 /* Assets.xcassets in Resources */,
+				41B6310520C2D7560000802E /* CustomCell.xib in Resources */,
 				41157AEB20A3D12E0022F7B3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,12 +287,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4130EA9E20B6261500E9FCDB /* RestApi.swift in Sources */,
+				41B6310720C2D7560000802E /* ViewModel.swift in Sources */,
+				417871BB20C21B8D0072093E /* CustomRecipeTableViewCell.swift in Sources */,
 				41395D6F20A93B8800C7B6F7 /* Ingredients.swift in Sources */,
+				412CFDC720BFA9F5008DB48D /* Recipe.swift in Sources */,
 				41157AE820A3D12E0022F7B3 /* ViewController.swift in Sources */,
-				412CFDC320BFA0AC008DB48D /* RecipeTableViewController.swift in Sources */,
-				41395D6D20A9398B00C7B6F7 /* IngredientsTableViewController.swift in Sources */,
+				41B6310920C2D82E0000802E /* IngredientsViewController.swift in Sources */,
+				41B6310620C2D7560000802E /* CustomCell.swift in Sources */,
 				41157AE620A3D12E0022F7B3 /* AppDelegate.swift in Sources */,
+				41B630C520C2AD2E0000802E /* RecipeViewController.swift in Sources */,
+				41B6310420C2D7560000802E /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,8 +459,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -448,10 +470,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = QuickEats/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uts.QuickEats;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -465,10 +484,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = QuickEats/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uts.QuickEats;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -483,11 +499,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = QuickEatsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uts.QuickEatsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -503,11 +515,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = QuickEatsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uts.QuickEatsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -522,11 +530,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = QuickEatsUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uts.QuickEatsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -541,11 +545,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = QuickEatsUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uts.QuickEatsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
